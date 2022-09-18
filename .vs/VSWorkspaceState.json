@@ -3,10 +3,11 @@
     "",
     "\\app_server",
     "\\app_server\\controllers",
-    "\\app_server\\routes",
+    "\\app_server\\models",
     "\\app_server\\views",
-    "\\app_server\\views\\partials"
+    "\\data",
+    "\\public"
   ],
-  "SelectedNode": "\\app.js",
+  "SelectedNode": "\\app_server\\models\\db.js",
   "PreviewInSolutionExplorer": false
 }
