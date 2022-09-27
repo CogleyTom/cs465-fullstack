@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const host = process.env.DB_HOST || '127.0.0.1'
-const dbURI = 'mongodb://' + host + '/travlr'
+const dbURI = `mongodb://${host}/travlr`
 const readLine = require('readline');
 
 console.log("dbURI=" + dbURI);
@@ -69,4 +69,4 @@ process.on('SIGTERM', () => {
 connect();
 
 // bring in the Mongoose schema
-require('./travlr');
+require('./models/travlr');
