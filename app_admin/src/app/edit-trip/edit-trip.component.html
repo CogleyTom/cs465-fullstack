@@ -1,10 +1,10 @@
 <div class="col-md-3">
   <h2 class="text-center">Edit Trip</h2>
   <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
     <div class="form-group">
       <label>Code:</label>
-      <input type="text" formControlName="code"
-             placeholder="Code" class="form-control"
+      <input type="text" formControlName="code" placeholder="Code" class="form-control"
              [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
       <div *ngIf="submitted && f.code.errors">
         <div *ngIf="f.code.errors.required">
@@ -44,7 +44,7 @@
              [ngClass]="{ 'is-invalid': submitted && f.start.errors }">
       <div *ngIf="submitted && f.start.errors">
         <div *ngIf="f.start.errors.required">
-          Start date is required
+          Start Date is required
         </div>
       </div>
     </div>
@@ -98,5 +98,6 @@
     </div>
 
     <button type="submit" class="btn btn-info">Save</button>
+
   </form>
 </div>
